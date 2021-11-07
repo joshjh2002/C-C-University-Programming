@@ -1,0 +1,53 @@
+• (gdb) help
+Open a (not optimal) manual as part of the interactive debugger.
+
+• (gdb) run <ARGS>
+The run command will start the execution of your program within the context of the GDB debugger. The
+optional arguments (ARGS) allow you to pass as many arguments as you want to the program as you
+would normally do.
+
+• (gdb) break <LINE NUMBER> k (gdb) break <FUNCTION> k (gdb) break <SOURCEFILE:LINE NUMBER>
+The break command will stop the execution of the program at the specified line number or function
+name just before it has been executed. The commonly used name for this process is known as setting a
+breakpoint. Once a breakpoint has stopped the execution, you can inspect the values of the variables
+at that point to you help with the process of debugging.
+
+• (gdb) delete <BREAKPOINT NUMBER>
+Delete the breakpoint with the corresponding number.
+
+• (gdb) continue
+Continue execution until the next breakpoint is reached (useful after a breakpoint has stopped the
+execution).
+
+• (gdb) next
+Execute all instructions needed to complete the current line.
+
+• (gdb) step
+Execute the next instruction as part of the statement of the current line. The execution is broken down
+following functions and allowing us to dig into the operations. In other words, step steps inside any
+functions called within the line.
+
+• (gdb) list <LINE NUMBER> | (gdb) list <FUNCTION>
+Lines surrounding the provided line number or function will be printed by GDB allowing the code to be
+easily viewed.
+
+• (gdb) print <EXPRESSION>
+Any valid C expression can be passed to the print method. Once you have reached a breakpoint, for
+instance, you can use this command to show the value of variables.
+
+• (gdb) set var <VARIABLE>=<VALUE>
+Set the specified variable to the given value.
+
+• (gdb) backtrace
+Print the stack of the function invocations. The stack frames are enumerated starting from 0, which is
+the current function.
+
+• (gdb) frame <FRAME-NUMBER>
+Allow switching between the frames to, e.g., inspect the callee of this function. Use it together with
+backtrace.
+
+• (gdb) info frame
+Get information on the stack frame.
+
+• (gdb) info locals
+Get information about local stack variables

@@ -1,0 +1,5 @@
+﻿  Main.cpp
+  namespaces.cpp
+  Generating Code...
+namespaces.obj : error LNK2005: "void __cdecl namespaces::printHello(void)" (?printHello@namespaces@@YAXXZ) already defined in Main.obj
+C:\Users\joshh\OneDrive - University of Reading\Year 1\C++ Programming\C++Features\Debug\C++Features.exe : fatal error LNK1169: one or more multiply defined symbols found
